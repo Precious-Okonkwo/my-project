@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Example of Responsive Design</title>
+
+    <link rel="stylesheet" href="./css/media-example.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <span>PH</span>
+                <span>Presh Hairs</span>
+            </div>
+
+            <ul class="desktop-nav">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">Hair Blends</a> </li>
+                <li> 
+                    <a href="#">Human Hair Wigs</a>
+                  <ul>
+                    <li> <a href="#">Factory Hairs</a> </li>
+                    <li> <a href="#">Cambodian Hairs</a> </li>
+                    <li> <a href="#">Vietnam Raw Donor Hairs</a></li>
+                  </ul>
+                </li>
+            </ul>
+        
+            <a href="#">SHOP NOW</a>
+
+            <button class="icon"> <i class="fa-solid fa-cart-shopping"></i> </button>
+            
+            <!-- small screens -->
+            <div class="mobile">
+
+                <!-- Moblie hamburger-->
+                <button> <i class="fa-solid fa-bars"></i> </button>
+                <button><i class="fa-solid fa-cart-shopping"></i></button>
+                
+                <!-- Mobile dropdown -->
+                <ul class="mobile-dropdown">
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">Human Hair Wigs</a> </li>
+                    <li> <a href="#">Hair Blends</a> </li>
+                    <li> <a href="#">About Us</a></li>
+
+                    <li> <a href="#">SHOP NOW</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+        
+                <h1>Welcome to Presh Hairs</h1>
+                <p>No 1 Factory and Vietnam Hair Store</p>
+        
+
+            <div class="overlay"></div>
+        </section>
+
+        <section class="top">
+            <div class="top-intro">
+                <h2>Top Sellers</h2>
+                <p>Be an extraordinary chic with our amazing 100% human hair wig collections</p>
+            </div>
+
+            <div class="top-content">
+                <article>
+                    <img src="../image/black bounce.jpeg"width=100 alt="">
+                    <h3>5by5 Sdd Bounce</h3>
+                    <p>#185,000</p>
+                    <a href="#">Add to cart</a>
+                </article>
+
+                <article>
+                    <img src="../image/5by5 bob.jpeg"width=100 alt="">
+                    <h3>5by5 Sdd Bob</h3>
+                    <p>#95,000</p>
+                    <a href="#">Add to cart</a>
+                </article>
+
+                <article>
+                    <img src="../image/colored bounce.jpeg"width=100 alt="">
+                    <h3>13by4 DD Bounce</h3>
+                    <p>#135,000</p>
+                    <a href="#">Add to cart</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <div class="pricing-intro">
+                <h2>Vietnam Raw Donor Hairs</h2>
+                <p>Spice up your beauty with our luxury raw donor hairs</p>
+            </div>
+
+            <div class="pricing-content">
+                <article>
+                    <img src="../image/raw pixie curls.jpeg" width="120" alt="raw pixie curl">
+                    <h3>Code 001</h3>
+                    <p>Vietnam Raw Donor Pixie Curls 300g 24inches</p>
+                    <p>#370,000</p>
+                    <a href="#">Add to cart</a>
+                </article>
+
+                <article>
+                    <img src="../image/short bonestraight.jpeg" width="100" alt="bonestraight">
+                    <h3>Code 002</h3>
+                    <p>Vietnam Raw Donor Bonestraight 10inches</p>
+                    <p>#140,000</p>
+                    <a href="#">Add to cart</a>
+                </article>
+
+                <article>
+                    <img src="../image/donor bounce.jpeg" width="90" alt="donor bounce">
+                    <h3>Code 003</h3>
+                    <p>Vietnam Raw Donor Bounce 300g 22inches</p>
+                    <p>#600,000</p>
+                    <a href="#">Add to cart</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-intro">
+                <h2>Contact Us</h2>
+                 <p>The best brand that sells luxury at affordable price</p>
+            </div>
+
+            <form>
+                <div class="first-last">
+                    <div>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="Enter your first name" >
+                    </div>
+
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Enter your last name">
+                    </div>
+                </div>
+
+                <div class="email-choice">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="example@email.com">
+                    </div>
+
+                    <div>
+                        <label for="choice">Hair Choice</label>
+                        <select id="choice">
+                            <option value="factoryhairs">Factory Hairs</option>
+                            <option value="cambodianhairs">Cambodian Hairs</option>
+                            <option value="vietnamhairs">Vietnam Raw Donor Hairs</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" placeholder="Drop your comment"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        &copy; All Right Reserved
+    </footer>
+</body>
+</html>
